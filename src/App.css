@@ -1,22 +1,23 @@
-.App {
-  text-align: center;
+.list, .ant-input{
+  width: 50%;
+  margin: 0 auto;
 }
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.ant-card-bordered{
+  margin: 1%;
+  background-color: #305596;
   color: white;
 }
-
-.App-link {
-  color: #09d3ac;
+.App{
+  border: 2px solid blue;
+  background: #D9E3F3;
+  padding: 2%;
+  height: 100vh;
+  overflow: scroll;
+}
+.App input{
+  margin: 0 auto 1%;
+}
+.ant-input-search{
+  display: flex;
+  justify-content: space-around;
 }
