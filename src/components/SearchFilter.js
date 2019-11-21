@@ -9,7 +9,7 @@ function SearchFilter(props) {
   return (
     <div className="list">
         {searchResult.length>0 ? searchResult.map((sentence)=>{
-          return <Card key={sentence.id}>{sentence.data}</Card>
+          return <Card key={sentence.id}><span className={sentence.highlight}>{sentence.data}</span></Card>
         }): <Result status="404" subTitle="No results found"/>}
     </div>
   );

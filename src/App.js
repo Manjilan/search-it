@@ -10,8 +10,11 @@ function App() {
   const [matches, setMatches] = useState(data);
   let searchResult = searchField => {
     if(searchField !== ""){
-      let sentencesMatchingSearch = data.filter(sentence=> sentence.data.includes(searchField));
-      setMatches(sentencesMatchingSearch);
+      let sentencesMatchingSearch = data.map(sentence=> {
+         sentence.data.includes(searchField) ? sentence.highlight = "highlight": sentence.highlight = "";
+         return sentence
+      })
+       setMatches(sentencesMatchingSearch);
     } else {
       setMatches(data);
     }
